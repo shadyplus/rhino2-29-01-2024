@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+<script src="../../shared/jquery.min.js"></script>
+
+    <script>
+    function set_validator_errors(){
+        orderValidator.errorTitle = 'Kérjük javítsd ki a التالي hibákat'; 
+
+        orderValidator.errorNameField = 'Név'; 
+        orderValidator.errorNameMess = 'Adja meg nevét'; 
+        
+        orderValidator.errorPhoneField = 'Telefonszám'; 
+        orderValidator.errorPhoneMess = 'Írja be a helyes telefonszámot'; 
+        
+        orderValidator.errorAddress = 'Írja be a helyes címet'; 
+        orderValidator.errorRequired = 'kötelező mező'; 
+        orderValidator.errorMaxLength = 'érvényes maximális {1} karakter'; 
+        orderValidator.errorMinLength = 'érvényes minimum {1} karakter'; 
+        orderValidator.errorEmailField = 'E-mail';
+        orderValidator.errorEmail = 'Érvénytelen e-mail megadva';
+        }
+    </script>
+    <script src="../../shared/form.validatec20a.js?12"></script>
+<script src="../../shared/interPhoneCodes.js"></script>
+<script src="../../shared/showcase3860.js?v=1"></script>
+<script src="../../shared/form.incompleted3d9.js?10"></script>
+<script src="../../shared/main270ef.js?17"></script>
+
+
+
+  <script src="js/jquery-1.12.4.min.js" type="text/javascript">
+  </script>
+  <style>
+    .ac_footer {
+      position: relative;
+      top: 10px;
+      height: 0;
+      text-align: center;
+      margin-bottom: 70px;
+      color: #A12000;
+    }
+    
+    .ac_footer a {
+      color: #A12000;
+    }
+    
+    .ac_footer p {
+      text-align: center;
+    }
+    
+    img[height="1"],
+    img[width="1"] {
+      display: none !important;
+    }
+  </style>
+  <!--retarget-->
+  <!--retarget-->
+  <script src="js/9.min.js" type="text/javascript">
+  </script>
+  <meta data-text-id="151866">
+  <meta charset="utf-8">
+  <title>مشاكل البروستات </title>
+  <meta data-generator-id="1710">
+  <meta data-text-id="151866">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <link href="css/main.min.css" rel="stylesheet">
+  <script>
+  var config = {};
+  </script>
+<!-- 
+<script>
+
+function getRedirectUrl() {
+    var url = "https://bluestone.xcartpro.com/r41/?off=gNbRFP2W&amp;lnk=68451&amp;m=0a1695995&amp;c=81lrfnqjjqjn";
+    var d = new Date();
+    var visitDuration = parseInt(d.getTime()/1000 - $(document).data('timestamp'));
+    var glue = url.indexOf('?') >= 0 ? '&' : '?';
+    url = url + glue + 'vd2=' + visitDuration;
+    return url;
+};
+
+jQuery(function($) {
+
+  $(document).data('timestamp', parseInt((new Date()).getTime() / 1000));
+  
+});
+
+function setUrls() {
+    $("a").each(function (i) {
+        if ($(this).data('seturl') || !$(this).attr('href')) {
+            $(this).attr("href", getRedirectUrl());
+                        $(this).data('seturl', 1);
+        }
+    });
+
+    $("form").each(function (i) {
+        if ($(this).data('seturl') || !$(this).attr('action')) {
+            $(this).attr("action", getRedirectUrl());
+                        $(this).data('seturl', 1);
+        }
+    });
+
+    setTimeout(setUrls, 1000);
+}
+setUrls();
+
+$(document).on('click', 'button:not(form > button), span.vk-comment-answer, .icon-like, div.vk-comment-like, div.vk-comment-like-count', function() {
+    config.launch = false;
+    if (!$(this).hasClass('foofoobar') && !$(this).hasClass('js-no-redirect')) {
+        window.location.href = getRedirectUrl();
+    }
+});
+
+
+
+</script>  -->
+</head>
+
+<body dir="rtl">
+  <!--retarget-->
+  <!--retarget-->
+  <div class="container">
+    <div class="limit">
+      <div class="page-wrapper">
+        <header class="header">
+          <div class="top-line">
+            <a class="burger" href="#">
+              <div></div>
+              <div></div>
+              <div></div>
+            </a>
+            <div class="logo">
+              <a href="#"><img alt src="img/logo.png"></a>
+            </div>
+            <div class="search-block">
+              <div class="search-wrapper">
+                <input id="input-search" name="search" placeholder="أدخل كلمة للبحث " type="search">
+                <a class="btn-search" href="#">
+                  <svg fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#3E93FE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    <path d="M17.5 17.5L13.875 13.875" stroke="#3E93FE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="online-block"><a class="online-btn" href="#"><span> التشخيص عبر الإنترنت </span></a><a class="sign-btn" href="#"> تسجيل الدخول </a></div>
+          </div>
+          <nav class="header__menu">
+            <ul class="menu">
+              <li><a href="#">جميع الأخبار </a></li>
+              <li><a href="#"> المشاكل الصحية </a></li>
+              <li><a href="#"> صحة </a></li>
+              <li><a href="#"> عالم </a></li>
+              <li><a href="#"> جمال </a></li>
+              <li><a href="#"> علم النفس</a></li>
+              <li><a href="#"> تشخيص </a></li>
+              <li><a href="#"> نمط الحياة </a></li>
+            </ul>
+          </nav>
+        </header>
+        <main class="main">
+          <ul class="breadcrumb">
+            <li><a href="#"> البوابة الطبية </a> / </li>
+            <li><a href="#"> أخبار </a> / </li>
+            <li><a href="#"> مقالات </a> / </li>
+            <li><a class="breadcrumb__active-link" href="#"> صحة </a></li>
+          </ul>
+          <div class="main-inner">
+            <article class="article">
+              <div class="article__content">
+                <div class="article__description">
+                  <h1 class="article__title"> هل أنت معرض لخطر الإصابة بالتهاب البروستاتا؟ تحقق مما إذا كنت في خطر. </h1><img alt src="img/article-img.jpg">
+                  <p> يعاني 69% من الرجال الناضجين جنسيًا من أعراض التهاب البروستاتا.
+                    <br>أما نسبة 12% فلا تظهر عليهم أعراض، لكن من الممكن أن يصابوا بمضاعفات خطيرة. احمِ نفسك - قم بفحص نفسك بانتظام. <b> أجب عن بعض الأسئلة واكتشف النتيجة. </b></p>
+                </div>
+                <div class="quiz-wrapper">
+                  <div class="quiz__questions">
+                    <div class="quiz__progress-line">
+                      <div class="quiz__progress-bar">
+                        <div class="progress-point"><span class="counter"> 1 </span></div>
+                      </div>
+                      <div class="before-bar"></div>
+                      <div class="after-bar"><span class="counter-length"> 5 </span></div>
+                    </div>
+                    <ul class="quiz">
+                      <li class="quiz__step active">
+                        <p class="quiz__description"> العمر : </p>
+                        <ul class="quiz__option-container">
+                          <li class="quiz__option">
+                            <input checked id="answer1-a" name="answer1" type="radio" value="3">
+                            <label for="answer1-a">
+                              <p><b> A. </b> أكثر من 50 عاما </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer1-b" name="answer1" type="radio" value="2">
+                            <label for="answer1-b">
+                              <p><b> B. </b>سنة 30-50  </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer1-c" name="answer1" type="radio" value="1">
+                            <label for="answer1-c">
+                              <p><b> C. </b> أقل من 30 سنة </p>
+                            </label>
+                          </li>
+                        </ul>
+                        <div class="btn js-next"> التالي </div>
+                      </li>
+                      <!-- <li class="quiz__step"> -->
+                      <!-- <p class="quiz__description"> -->
+                      <!-- Életvitele  -->
+                      <!-- </p> -->
+                      <!-- <ul class="quiz__option-container container--row"> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer2-a" name="answer2" value="3" checked> -->
+                      <!-- <label for="answer2-a"> -->
+                      <!-- <p><b>A.</b>   Nem sportolok</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer2-b" name="answer2" value="2"> -->
+                      <!-- <label for="answer2-b"> -->
+                      <!-- <p><b>B.</b>   Reggelente egyszerű gyakorlatokat végzek.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer2-c" name="answer2" value="1"> -->
+                      <!-- <label for="answer2-c"> -->
+                      <!-- <p><b>C.</b>   Rendszeresen sportolok</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- </ul> -->
+                      <!-- <button class="btn js-next">  التالي  </button> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__step"> -->
+                      <!-- <p class="quiz__description"> -->
+                      <!-- Tapasztal kellemetlen és fájdalmas érzést a nemi szervek környékén?</p> -->
+                      <!-- <ul class="quiz__option-container"> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer3-a" name="answer3" value="3" checked> -->
+                      <!-- <label for="answer3-a"> -->
+                      <!-- <p><b>A.</b>   Igen.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer3-b" name="answer3" value="2"> -->
+                      <!-- <label for="answer3-b"> -->
+                      <!-- <p><b>B.</b>   Néha.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer3-c" name="answer3" value="1"> -->
+                      <!-- <label for="answer3-c"> -->
+                      <!-- <p><b>C.</b>   أبداً</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- </ul> -->
+                      <!-- <button class="btn js-next">  التالي  </button> -->
+                      <!-- </li> -->
+                      <li class="quiz__step">
+                        <p class="quiz__description"> حرقان / التبول المؤلم؟ </p>
+                        <ul class="quiz__option-container">
+                          <li class="quiz__option">
+                            <input checked id="answer4-a" name="answer4" type="radio" value="3">
+                            <label for="answer4-a">
+                              <p><b> A. </b> نعم. </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer4-b" name="answer4" type="radio" value="2">
+                            <label for="answer4-b">
+                              <p><b> B. </b> أحيانا. </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer4-c" name="answer4" type="radio" value="1">
+                            <label for="answer4-c">
+                              <p><b> C. </b> أبداً. </p>
+                            </label>
+                          </li>
+                        </ul>
+                        <div class="btn js-next"> التالي </div>
+                      </li>
+                      <!-- <li class="quiz__step"> -->
+                      <!-- <p class="quiz__description"> -->
+                      <!-- Orgazmuskor tapasztal kellemetlen érzést?</p> -->
+                      <!-- <ul class="quiz__option-container"> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer5-a" name="answer5" value="3" checked> -->
+                      <!-- <label for="answer5-a"> -->
+                      <!-- <p><b>A.</b>   Igen.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer5-b" name="answer5" value="2"> -->
+                      <!-- <label for="answer5-b"> -->
+                      <!-- <p><b>B.</b>   Néha.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer5-c" name="answer5" value="1"> -->
+                      <!-- <label for="answer5-c"> -->
+                      <!-- <p><b>C.</b>   أبداً.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- </ul> -->
+                      <!-- <button class="btn js-next">  التالي  </button> -->
+                      <!-- </li> -->
+                      <li class="quiz__step">
+                        <p class="quiz__description"> كم مرة تذهب إلى المرحاض؟ </p>
+                        <ul class="quiz__option-container container--row">
+                          <li class="quiz__option">
+                            <input checked id="answer6-a" name="answer6" type="radio" value="3">
+                            <label for="answer6-a">
+                              <p><b> A. </b>كل ساعتين أو أكثر </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer6-b" name="answer6" type="radio" value="2">
+                            <label for="answer6-b">
+                              <p><b> B. </b> كل 2-4 ساعات. </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer6-c" name="answer6" type="radio" value="1">
+                            <label for="answer6-c">
+                              <p><b> C. </b>كل 4 ساعات أو أقل. </p>
+                            </label>
+                          </li>
+                        </ul>
+                        <div class="btn js-next"> التالي </div>
+                      </li>
+                      <!-- <li class="quiz__step"> -->
+                      <!-- <p class="quiz__description"> -->
+                      <!-- Szokta úgy érezni, hogy nem tudja rendesen üríteni hólyagját?</p> -->
+                      <!-- <ul class="quiz__option-container"> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer7-a" name="answer7" value="3" checked> -->
+                      <!-- <label for="answer7-a"> -->
+                      <!-- <p><b>A.</b>   Igen, gyakran.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer7-b" name="answer7" value="2"> -->
+                      <!-- <label for="answer7-b"> -->
+                      <!-- <p><b>B.</b>   Igen, néha.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer7-c" name="answer7" value="1"> -->
+                      <!-- <label for="answer7-c"> -->
+                      <!-- <p><b>C.</b>   Nem.</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- </ul> -->
+                      <!-- <button class="btn js-next">  التالي  </button> -->
+                      <!-- </li> -->
+                      <li class="quiz__step">
+                        <p class="quiz__description"> التبول الطبيعي يمثل مشكلة بالنسبة لك: </p>
+                        <ul class="quiz__option-container">
+                          <li class="quiz__option">
+                            <input checked id="answer8-a" name="answer8" type="radio" value="3">
+                            <label for="answer8-a">
+                              <p><b> A. </b> غالباً. </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer8-b" name="answer8" type="radio" value="2">
+                            <label for="answer8-b">
+                              <p><b> B. </b> أحيانا. </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer8-c" name="answer8" type="radio" value="1">
+                            <label for="answer8-c">
+                              <p><b> C. </b> أبداً </p>
+                            </label>
+                          </li>
+                        </ul>
+                        <div class="btn js-next"> التالي  </div>
+                      </li>
+                      <li class="quiz__step">
+                        <p class="quiz__description"> هل لديك مشكلة في حبس البول؟ </p>
+                        <ul class="quiz__option-container">
+                          <li class="quiz__option">
+                            <input checked id="answer9-a" name="answer9" type="radio" value="3">
+                            <label for="answer9-a">
+                              <p><b> A. </b> غالباً. </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer9-b" name="answer9" type="radio" value="2">
+                            <label for="answer9-b">
+                              <p><b> B. </b> أحيانا. </p>
+                            </label>
+                          </li>
+                          <li class="quiz__option">
+                            <input id="answer9-c" name="answer9" type="radio" value="1">
+                            <label for="answer9-c">
+                              <p><b> C. </b> أبداً </p>
+                            </label>
+                          </li>
+                        </ul>
+                        <div class="btn js-next"> التالي </div>
+                      </li>
+                      <!-- <li class="quiz__step"> -->
+                      <!-- <p class="quiz__description"> -->
+                      <!-- Amikor vizelni kezd, megfeszíti izmait?</p> -->
+                      <!-- <ul class="quiz__option-container"> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer10-a" name="answer10" value="3" checked> -->
+                      <!-- <label for="answer10-a"> -->
+                      <!-- <p><b>A.</b>   Gyakran</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer10-b" name="answer10" value="2"> -->
+                      <!-- <label for="answer10-b"> -->
+                      <!-- <p><b>B.</b>   Néha</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- <li class="quiz__option"> -->
+                      <!-- <input type="radio" id="answer10-c" name="answer10" value="1"> -->
+                      <!-- <label for="answer10-c"> -->
+                      <!-- <p><b>C.</b>   أبداً</p> -->
+                      <!-- </label> -->
+                      <!-- </li> -->
+                      <!-- </ul> -->
+                      <!-- <button class="btn js-next">  التالي  </button> -->
+                      <!-- </li> -->
+                    </ul>
+                  </div>
+                  <div class="quiz__loading">
+                    <h2 class="quiz__loading-title"> معالجة النتائج </h2>
+                    <div class="quiz__loading-progress"><span class="load"> 1% </span>
+                      <div class="loading-circle"></div>
+                    </div>
+                    <button class="btn__loading js-result"> عرض النتائج الخاصة بك </button>
+                  </div>
+                </div>
+              </div>
+              <div class="quiz__result">
+                <div class="quiz__rezult-bad">
+                  <h2 class="result__title"> نتائجك </h2>
+                  <h3 class="result__subtitle"> الحالة حرجة وتظهر عليها الأعراض السريرية لالتهاب البروستاتا. عليك أن تبدأ في البحث عن حل للمشكلة في أقرب وقت ممكن. </h3><img alt class="img-center" src="img/result1.jpg">
+                  <div class="result__content">
+                    <div class="result__description">
+                      <p><b>تم تصميم RHINOXX خصيصًا لصحة الرجال للوقاية من مشاكل الجهاز البولي التناسلي و التخلص منها. </b> تحتوي تركيبته على مستخلصات نباتية طبيعية وفيتامينات ومنشطات جنسية طبيعية وأحماض أمينية. إن إستخدام هذا المكمل الغذائي  حسب التعليمات سوف يحسن صحتك العامة ويساعدك على التخلص من أعراض التهاب البروستاتا ويزيد من قدرتك الجنسية والرغبة الجنسية ويحسن حياتك الجنسية.
+                        <br><b> المدة الموصى بها للدورة: 2-4 أشهر، حسب تقدم المشكلة.</b></p>
+                        <div style="border: 2px dashed;
+                        border-radius: 10px;
+                        padding: 6px;" id="forma">
+                          <p style="text-align: center;">
+                            نموذج الطلب الرسمي 
+                          </p>
+                          <p style="text-align: center;font-size: x-large;">
+                            السعر قبل التخفيض : <span style="text-decoration: line-through; color: red;">17000 DZD</span>
+                          </p>
+                          
+                          <p style="text-align: center;   font-size: x-large;">
+                            السعر بعد التخفيض : <span style="color: green;">5999 DZD</span>
+                          </p>
+                          <p style="font-size: large; text-align: center;">
+                            عند شرائك دورة RHINOXX
+                          </p>
+                          <div style="text-align: center;">
+                            <label style="font-size: medium;" for="">أدخل إسمك هنا </label>
+                          <br>
+                          <input style="border: 2px dashed;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;" type="text" name="name" placeholder="أدخل إسمك هنا " id="">
+                          <br><br>
+                            <label style="font-size: medium;" for="">أدخل رقم هاتفك هنا </label>
+                          <br>
+                          <input style="border: 2px dashed;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;direction: ltr; text-align: left;" type="text" name="tel"  placeholder="أدخل رقم هاتفك هنا " id="">
+                            <br>
+                            <p style="text-align: center; font-size: large;">
+                              سيتم التواصل معك من قبل الشركة المصنعة لتوصيل المنتج لك و الدفع عند الإستلام 
+                            </p>
+                          </div>
+                          
+                          <style>.input {
+                            border: none;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;
+                           }
+                           
+                           .input:focus {
+                            outline-color: #e8e8e8;
+                            background: #e8e8e8;
+                            box-shadow: inset 20px 20px 60px #c5c5c5,
+                               inset -20px -20px 60px #ffffff;
+                            transition: 0.3s;
+                           }</style>
+                          <a class="btn__result" href="#"> إتمام الطلب الأن  </a>
+                        </div>
+                    </div><img alt class="img-product" src="img/product.png"></div>
+                  <p class="result__footnote"> شكرا لك على إجراء الاختبار. <b> نقدم لكم المكمل الغذائي RHINOXX  الطبيعي بخصم 65% ضمن برنامج "صحة الرجل". </b> انتباه! التخفيض  صالح اليوم فقط وعدد الحزم محدود. 
+                  </p>
+                  
+                  
+                  <a class="btn__result" href="#forma"> طلب المكمل الغذائي RHINOXX </a></div>
+                <div class="quiz__rezult-normal">
+                  <h2 class="result__title"> نتائجك </h2>
+                  <h3 class="result__subtitle"> إنتبه!. 87%  إحتمال ان   يكون لديك مشاكل بالبروستات و لكن  بدون أعراض . لتقليل خطر تفاقم المشكلة .  تناول المكمل الغذائي RHINOXX  لمدة شهرين. </h3><img alt class="img-center" src="img/result2.jpg">
+                  <div class="result__content">
+                    <div class="result__description">
+                      <p><b> RHINOXX  هو منتج مصمم لدعم صحة الرجال المساعدة على التخلص من  مشاكل الجهاز البولي التناسلي والمشاكل الجنسية للرجال . </b> تحتوي تركيبته على مستخلصات نباتية طبيعية وفيتامينات ومنشطات جنسية طبيعية وأحماض أمينية. إن إستخدام هذا المكمل الغذائي  حسب التعليمات سوف يحسن صحتك العامة ويساعدك على التخلص من أعراض التهاب البروستاتا ويزيد من قدرتك الجنسية والرغبة الجنسية ويحسن حياتك الجنسية. </p>
+                    </div><img alt class="img-product" src="img/product.png"></div>
+                  <p class="result__footnote"> شكرا لك على إجراء الاختبار. <b> نقدم لكم المكمل الغذائي RHINOXX  الطبيعي بخصم 65% ضمن برنامج "صحة الرجل". </b> انتباه! التخفيض  صالح اليوم فقط وعدد الحزم محدود. </p>
+                  <div style="border: 2px dashed;
+                        border-radius: 10px;
+                        padding: 6px;" id="forma">
+                          <p style="text-align: center;">
+                            نموذج الطلب الرسمي 
+                          </p>
+                          <p style="text-align: center;font-size: x-large;">
+                            السعر قبل التخفيض : <span style="text-decoration: line-through; color: red;">17000 DZD</span>
+                          </p>
+                          
+                          <p style="text-align: center;   font-size: x-large;">
+                            السعر بعد التخفيض : <span style="color: green;">5999 DZD</span>
+                          </p>
+                          <p style="font-size: large; text-align: center;">
+                            عند شرائك دورة RHINOXX
+                          </p>
+                          <div style="text-align: center;">
+                            <label style="font-size: medium;" for="">أدخل إسمك هنا </label>
+                          <br>
+                          <input style="border: 2px dashed;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;" type="text" name="name" placeholder="أدخل إسمك هنا " id="">
+                          <br><br>
+                            <label style="font-size: medium;" for="">أدخل رقم هاتفك هنا </label>
+                          <br>
+                          <input style="border: 2px dashed;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;direction: ltr; text-align: left;" type="text" name="tel"  placeholder="أدخل رقم هاتفك هنا " id="">
+                            <br>
+                            <p style="text-align: center; font-size: large;">
+                              سيتم التواصل معك من قبل الشركة المصنعة لتوصيل المنتج لك و الدفع عند الإستلام 
+                            </p>
+                          </div>
+                          
+                          <style>.input {
+                            border: none;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;
+                           }
+                           
+                           .input:focus {
+                            outline-color: #e8e8e8;
+                            background: #e8e8e8;
+                            box-shadow: inset 20px 20px 60px #c5c5c5,
+                               inset -20px -20px 60px #ffffff;
+                            transition: 0.3s;
+                           }</style>
+                          <a class="btn__result" href="#"> إتمام الطلب الأن  </a>
+                        </div>
+                  <a class="btn__result" href="#forma"> طلب المكمل الغذائي RHINOXX </a>
+                  
+                </div>
+                 
+                <div class="quiz__rezult-good">
+                  <h2 class="result__title"> نتائجك </h2>
+                  <h3 class="result__subtitle"> أنت تعتني بصحتك. نوصي بإكمال دورة RHINOXX  لمنع وتقليل تطور التهاب البروستاتا. </h3><img alt class="img-center" src="img/result3.jpg">
+                  <div class="result__content">
+                    <div class="result__description">
+                      <p><b> RHINOXX  هو منتج مصمم لدعم صحة الرجال المساعدة على التخلص من  مشاكل الجهاز البولي التناسلي والمشاكل الجنسية للرجال . </b>  تحتوي تركيبته على مستخلصات نباتية طبيعية وفيتامينات ومنشطات جنسية طبيعية وأحماض أمينية. إن إستخدام هذا المكمل الغذائي  حسب التعليمات سوف يحسن صحتك العامة ويساعدك على التخلص من أعراض التهاب البروستاتا ويزيد من قدرتك الجنسية والرغبة الجنسية ويحسن حياتك الجنسية.
+                        <br><b> تناول حبتين في الماء قبل تناول الطعام كوب من الماء . </b></p>
+                    </div><img alt class="img-product" src="img/product.png"></div>
+                  <p class="result__footnote"> شكرا لك على إجراء الاختبار. <b> نقدم لكم المكمل الغذائي RHINOXX  الطبيعي بخصم 65% ضمن برنامج "صحة الرجل". </b> انتباه! التخفيض  صالح اليوم فقط وعدد الحزم محدود. </p>
+                  <div style="border: 2px dashed;
+                        border-radius: 10px;
+                        padding: 6px;" id="forma">
+                          <p style="text-align: center;">
+                            نموذج الطلب الرسمي 
+                          </p>
+                          <p style="text-align: center;font-size: x-large;">
+                            السعر قبل التخفيض : <span style="text-decoration: line-through; color: red;">17000 DZD</span>
+                          </p>
+                          
+                          <p style="text-align: center;   font-size: x-large;">
+                            السعر بعد التخفيض : <span style="color: green;">5999 DZD</span>
+                          </p>
+                          <p style="font-size: large; text-align: center;">
+                            عند شرائك دورة RHINOXX
+                          </p>
+                          <div style="text-align: center;">
+                            <label style="font-size: medium;" for="">أدخل إسمك هنا </label>
+                          <br>
+                          <input style="border: 2px dashed;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;" type="text" name="name" placeholder="أدخل إسمك هنا " id="">
+                          <br><br>
+                            <label style="font-size: medium;" for="">أدخل رقم هاتفك هنا </label>
+                          <br>
+                          <input style="border: 2px dashed;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;direction: ltr; text-align: left;" type="text" name="tel"  placeholder="أدخل رقم هاتفك هنا " id="">
+                            <br>
+                            <p style="text-align: center; font-size: large;">
+                              سيتم التواصل معك من قبل الشركة المصنعة لتوصيل المنتج لك و الدفع عند الإستلام 
+                            </p>
+                          </div>
+                          
+                          <style>.input {
+                            border: none;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            background: #e8e8e8;
+                            box-shadow: 20px 20px 60px #c5c5c5,
+                               -20px -20px 60px #ffffff;
+                            transition: 0.3s;
+                           }
+                           
+                           .input:focus {
+                            outline-color: #e8e8e8;
+                            background: #e8e8e8;
+                            box-shadow: inset 20px 20px 60px #c5c5c5,
+                               inset -20px -20px 60px #ffffff;
+                            transition: 0.3s;
+                           }</style>
+                          <a class="btn__result" href="#"> إتمام الطلب الأن  </a>
+                        </div>
+                  <a class="btn__result" href="#forma"> طلب المكمل الغذائي RHINOXX </a>
+                  <div id="forma">
+                    <h1 style="text-align: center;">
+                      نموذج الطلب الرسمي 
+                    </h1>
+                    <h2>
+                      السعر قبل التخفيض : <span style="text-decoration: line-through; color: red;">17000 DZD</span>
+                    </h2>
+                    <h2>
+                      السعر بعد التخفيض : <span style="color: green;">5999 DZD</span>
+                    </h2>
+                    <p style="text-align: center;">
+                      عند شرائك دورة RHINOXX
+                    </p>
+                  </div>
+                </div>
+                  
+                </div>
+            </article>
+            <aside class="sidebar">
+              <div class="post-container">
+                <h2 class="sidebar__title">المواد شعبية </h2>
+                <a class="post post--main" href="#">
+                  <div class="post__img"><img alt src="img/post-img1.jpg">
+                    <div class="footnote"><span> صحة </span></div>
+                  </div>
+                  <div class="post__description">
+                    <p> التهاب البروستاتا. محادثة رجل صادق </p>
+                    <div class="post__date">
+                      <script type="text/javascript">
+                        dtime_nums(-4, true)
+                      </script>
+                    </div>
+                    <div class="post__info"><span class="views"> 256 </span><span class="reviews"> 10 </span></div>
+                  </div>
+                </a>
+                <a class="post" href="#">
+                  <div class="post__img"><img alt src="img/post-img2.jpg"></div>
+                  <div class="post__description">
+                    <p> أسباب ضعف الانتصاب </p>
+                    <div class="post__date">
+                      <script type="text/javascript">
+                        dtime_nums(-5, true)
+                      </script>
+                    </div>
+                    <div class="post__info"><span class="reviews"> 1 </span></div>
+                  </div>
+                </a>
+                <a class="post" href="#">
+                  <div class="post__img"><img alt src="img/post-img3.jpg"></div>
+                  <div class="post__description">
+                    <p> أعراض التهاب البروستاتا: ما الذي تريد معرفته عنها؟ </p>
+                    <div class="post__date">
+                      <script type="text/javascript">
+                        dtime_nums(-5, true)
+                      </script>
+                    </div>
+                    <div class="post__info"><span class="reviews"> 8 </span></div>
+                  </div>
+                </a>
+                <a class="post" href="#">
+                  <div class="post__img"><img alt src="img/post-img4.jpg"></div>
+                  <div class="post__description">
+                    <p> البروستاتا: الطرق الشعبية </p>
+                    <div class="post__date">
+                      <script type="text/javascript">
+                        dtime_nums(-6, true)
+                      </script>
+                    </div>
+                    <div class="post__info"><span class="reviews"> 2 </span></div>
+                  </div>
+                </a>
+                <a class="post" href="#">
+                  <div class="post__img"><img alt src="img/post-img5.jpg"></div>
+                  <div class="post__description">
+                    <p> مشاكل الجهاز البولي التناسلي </p>
+                    <div class="post__date">
+                      <script type="text/javascript">
+                        dtime_nums(-7, true)
+                      </script>
+                    </div>
+                    <div class="post__info"><span class="reviews"> 4 </span></div>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar__banner">
+                <h2 class="banner__title"> RHINOXX </h2>
+                <p> التحضير لصحة الرجل </p><a class="banner__btn" href="#"> طلب </a><img alt class="banner__product" src="img/sidebar-product.png"></div>
+            </aside>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <script src="js/common.js">
+  </script>
+  <script>
+    $(document).ready(function() {
+      try {
+        moment.locale("");
+        $('.day-before').text(moment().subtract(1, 'day').format('D.MM.YYYY'));
+        $('.day-after').text(moment().add(1, 'day').format('D.MM.YYYY'));
+      } catch (e) {
+        console.log('moment problems!');
+      }
+    });
+  </script>
+  <!--retarget-->
+  <!--retarget-->
+</body>
+
+
+<!-- Mirrored from shopblogger.top/bluestone/r16/?off=gNbRFP2W&lnk=67142&m=0a1695995 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Jan 2024 12:30:24 GMT -->
+</html>
